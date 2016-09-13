@@ -14,7 +14,7 @@ object Main {
 
     require(items.nonEmpty, "You didn't buy any valid items.")
 
-    val price = Checkout.purchase(items)
+    val price = Checkout.purchase(items, true)
 
     println(s"Your total cost today is: $price")
   }
